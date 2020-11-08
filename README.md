@@ -1,4 +1,4 @@
-# date-picker
+# vue-calendar
 
 ## Project setup
 ```
