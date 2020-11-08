@@ -1,22 +1,20 @@
 <template>
-  <datePicker 
-    :options="calendarArr" 
+  <calendar 
+    :options="calendar" 
     class="calendar" 
     @handleClickDay="handleClickDay" 
     @handlePrevMonth="handlePrevMonth"
     @handleNextMonth="handleNextMonth"
   />
-  
 </template>
-
 <script>
-import datePicker from './components/date-picker'
+import calendar from './components/calendar'
 export default {
-  name: 'date-picker',
+  name: 'canlendar',
   data () {
     return {
-      calendarArr: {
-          type: 'combination',
+      calendar: {
+          type: 'comb',
           headStyle: {
             todayBtn: 'right',
             combination: 'center',
@@ -30,7 +28,7 @@ export default {
     }
   },
   components: {
-    datePicker
+    calendar
   },
   methods: {
     handleClickDay () {
